@@ -1,0 +1,22 @@
+server:
+  port: 8085
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8081/eureka/
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MolyXl/config.git
+          searchPaths: config
+          username: molyxl
+          password: cikmnovwx1
+  application:
+    name: eureka-config

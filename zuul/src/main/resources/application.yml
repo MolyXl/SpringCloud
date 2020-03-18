@@ -1,0 +1,19 @@
+server:
+  port: 8087
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8081/eureka/
+
+spring:
+  application:
+    name: zuul
+zuul:
+  routes:
+    consumer:
+      path: /consumer/**
+      serviceId: eureka-consumer

@@ -15,8 +15,11 @@
     </parent>
     <modules>
         <module>client</module>
+        <module>config</module>
+        <module>consumer</module>
         <module>server</module>
         <module>provider</module>
+        <module>provider1</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

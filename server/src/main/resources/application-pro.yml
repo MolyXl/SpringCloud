@@ -14,3 +14,7 @@ eureka:
 spring:
   application:
     name: eureka-server
+  security:
+    user:
+      name: macro
+      password: 123456
